@@ -25,7 +25,10 @@ function LoginForm() {
       }
       const data = await resp.json();
       console.log(data)
-      if (data) login();
+      if (data) {
+        login();
+        alert("Sign up Done")
+      }
     }
     catch{
       console.log('error');

@@ -244,7 +244,7 @@ function StudentHelp() {
                   ></i>
                   <p className="mt-2">{paper.year}</p>
                   <button className="btn btn-outline-primary rounded-pill mt-2" onClick={() => window.open(paper.file,"_parent")}>
-                    View
+                    View/Download
                   </button>
                 </div>
               </div>
@@ -270,7 +270,7 @@ function StudentHelp() {
                   ></i>
                   <p className="mt-2">{paper.year}</p>
                   <button className="btn btn-outline-primary rounded-pill mt-2" onClick={() => window.open(paper.file,"_parent")}>
-                    View
+                    View/Download
                   </button>
                 </div>
               </div>
