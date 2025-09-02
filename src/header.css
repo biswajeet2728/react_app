@@ -1,0 +1,35 @@
+#s {
+    margin-left: 42%;
+
+}
+
+#div {
+    padding-left: 3%;
+}
+
+#b {
+    margin-left: 2%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #s {
+        margin-left: 10%;
+
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    #s {
+        margin-left: 79%;
+    }
+
+    #div {
+        padding-left: 5%;
+    }
+
+    #b {
+        margin-left: 1%;
+    }
+}
