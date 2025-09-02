@@ -36,7 +36,7 @@ function LoginForm() {
     try {
       const resp = await fetch('https://biswajeet.pythonanywhere.com/auth/', {
         method: "POST",
-        
+        credentials: "include", 
         headers: {
           "Content-Type": "application/json",
         },
@@ -47,7 +47,7 @@ function LoginForm() {
       }
       const data = await resp.json();
       console.log("Token", data);
-      if(data.token) setToken("B-token", data.token, {path : "/", maxAge : 60 * 60 * 24 * 365 * 10, sameSite : "lax"});
+      if(data.token) setToken("B-token", data.token, {path : "/", maxAge : 60 * 60 * 24 * 365 * 10, sameSite : "None", secure : true});
     }
     catch {
       console.log("error")
