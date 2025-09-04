@@ -125,6 +125,7 @@ function StudentHelp() {
       }
       const result = await resp.json();
       removeToken('B-token');
+      alert("You are Sign out");
       navigate("/");
 
     }
