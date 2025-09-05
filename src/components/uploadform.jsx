@@ -37,6 +37,7 @@ function UploadPaper() {
             })
             if(!resp.ok){
                 console.log("error");
+                alert("Fill the field properly")
             }
             const result = await resp.json();
             alert("File Uploaded");
